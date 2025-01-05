@@ -1,4 +1,4 @@
-import { TrendingUp } from "lucide-react";
+import { DollarSign, MessagesSquareIcon, PencilRuler, TrendingUp, Workflow } from "lucide-react";
 import { Montserrat, Poppins } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: "700" });
@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function DesktopNavbar() {
   return (
-    <nav className="flex justify-between items-center p-4">
+    <nav className="md:flex justify-between items-center p-4 hidden">
         <article className="flex gap-2 items-center">
             <TrendingUp size={32} />
             <h1 className={`${montserrat.className} text-xl`}>
@@ -23,16 +23,28 @@ export default function DesktopNavbar() {
                 <Link href="/">Home</Link>
             </li>
             <li className="hover:text-secondaryDark transition-all duration-300">
-                <Link href="/features">Features</Link>
+                <Link className="flex gap-2 items-center" href="/features">
+                    <Workflow size={20} />
+                    Features
+                </Link>
             </li>
             <li className="hover:text-secondaryDark transition-all duration-300">
-                <Link href="/pricing">Pricing</Link>
+                <Link className="flex gap-2 items-center" href="/pricing">
+                    <DollarSign size={20} />
+                    Pricing
+                </Link>
             </li>
             <li className="hover:text-secondaryDark transition-all duration-300">
-                <Link href="/how-it-works">How It Works</Link>
+                <Link className="flex gap-2 items-center" href="/how-it-works">
+                    <PencilRuler size={20} />
+                    How It Works
+                </Link>
             </li>
             <li className="pr-4 hover:text-secondaryDark transition-all duration-300">
-                <Link href="/contact-us">Contact Us</Link>
+                <Link className="flex gap-2 items-center" href="/contact-us">
+                    <MessagesSquareIcon size={20} />
+                    Contact Us
+                </Link>
             </li>
         </ul>
 
