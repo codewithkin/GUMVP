@@ -29,6 +29,7 @@ export default function MobileNavbar () {
                 </article>
 
                 <Link 
+                    target="_blank"
                     className="bg-charcoal flex gap-2 items-center font-semibold text-white px-4 py-2 rounded-full border-3 border-primaryLight hover:bg-primaryLight hover:text-charcoal transition-all duration-300"
                     href="https://calendly.com/admin-groundupmvp/project">
                     <Calendar size={20} />

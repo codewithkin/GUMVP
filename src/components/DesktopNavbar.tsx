@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function DesktopNavbar() {
   return (
-    <nav className="md:flex justify-between items-center p-4 hidden">
+    <nav className="md:flex justify-between shadow-secondaryLight items-center p-4 hidden">
         <article className="flex gap-2 items-center">
             <TrendingUp size={32} />
             <h1 className={`${montserrat.className} text-xl`}>
@@ -48,9 +48,10 @@ export default function DesktopNavbar() {
             </li>
         </ul>
 
-        <Link 
-        className="bg-charcoal flex gap-2 items-center font-semibold text-white px-4 py-2 rounded-full border-3 border-primaryLight hover:bg-primaryLight hover:text-charcoal transition-all duration-300"
-        href="https://calendly.com/admin-groundupmvp/project">
+        <Link
+            target="_blank" 
+            className="bg-charcoal flex gap-2 items-center font-semibold text-white px-4 py-2 rounded-full border-3 border-primaryLight hover:bg-primaryLight hover:text-charcoal transition-all duration-300"
+            href="https://calendly.com/admin-groundupmvp/project">
             <Calendar size={20} />
             Book A Call
         </Link>
