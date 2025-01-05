@@ -26,7 +26,7 @@ export default function PricingTier ({ title, price, features, normalPrice, imag
 
             {/* CTA */}
             <Link 
-            className={`${title === "Standard" && "bg-white text-primaryDark"} transition-all duration-300 hover:bg-primaryDark hover:text-white bg-secondaryDark text-secondaryLight rounded-full py-2 w-full flex justify-center items-center my-4 text-white`}
+            className={`${title === "Standard" && "bg-white text-primaryDark"} transition-all duration-300 hover:bg-primaryDark hover:text-white bg-secondaryDark text-secondaryDark rounded-full py-2 w-full flex justify-center items-center my-4 text-white`}
             target="_blank" href="#">
                 Let's talk
             </Link>

@@ -12,7 +12,7 @@ export default function Why () {
 
                 <article className="grid gap-1">
                     <p className="text-white md:text-lg">70% of software projects fail due to lack of focus - we're <br className="hidden md:block" />here to change that</p>
-                    <Link href="https://calendly.com/admin-groundupmvp/project" className="bg-white w-fit transition-all duration-300 hover:bg-primaryLight hover:text-primaryDark rounded-full font-semibold px-8 py-2 text-secondaryDark">
+                    <Link target="_blank" href="https://calendly.com/admin-groundupmvp/project" className="bg-white w-fit transition-all duration-300 hover:bg-primaryLight hover:text-primaryDark rounded-full font-semibold px-8 py-2 text-secondaryDark">
                         Book a call
                     </Link>
                 </article>

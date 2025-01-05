@@ -32,7 +32,7 @@ export default function Process() {
                                     <p className="text-[#c4c4c4]">{description}</p>
 
                                     {/* CTA */}
-                                    <Link className="text-primaryLight flex gap-2 items-center" href="https://calendly.com/admin-groundupmvp/project">
+                                    <Link target="_blank" className="text-primaryLight flex gap-2 items-center" href="https://calendly.com/admin-groundupmvp/project">
                                         Let's discuss your project
                                         <ArrowRight size={16} />
                                     </Link>
@@ -60,7 +60,7 @@ export default function Process() {
                                     <p className="text-charcoal">{description}</p>
 
                                     {/* CTA */}
-                                    <Link className="text-secondaryDark flex gap-2 items-center" href="https://calendly.com/admin-groundupmvp/project">
+                                    <Link target="_blank" className="text-secondaryDark flex gap-2 items-center" href="https://calendly.com/admin-groundupmvp/project">
                                         Learn more
                                         <ArrowRight size={16} />
                                     </Link>
