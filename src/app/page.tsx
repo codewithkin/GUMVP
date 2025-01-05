@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
+import Process from "@/components/Process";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "GroundUpMVP | Build Your Idea in 21 Days",
   description:
     "GroundUpMVP specializes in turning your business ideas into fully functional web or mobile applications with expert design, deployment, and analytics—all in just 21 days.",
-  canonical: "https://groundupmvp.com", // Update this to your actual domain
   openGraph: {
     type: "website",
     url: "https://groundupmvp.com",
@@ -22,13 +22,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    handle: "groundupmvp",
     site: "@groundupmvp",
-    cardType: "summary_large_image",
     title: "GroundUpMVP | Build Your Idea in 21 Days",
     description:
       "GroundUpMVP helps you bring your ideas to life with fully functional web or mobile apps. 21-day turnaround, expert design, and full deployment.",
-    image: "https://groundupmvp.com/twitter-image.jpg", // Replace with the actual image URL
   },
   keywords: [
     "MVP development",
@@ -48,6 +45,7 @@ export default function Home () {
   return (
     <section>
       <Header />
+      <Process />
     </section>
   )
 }

@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
 export default function Header() {
   return (
@@ -15,10 +18,15 @@ export default function Header() {
                 Early bird promotion ends on February 5th
             </article>
 
-            {/* Heading */}
-            <h2 className="text-6xl md:text-7xl text-center font-bold text-white">
-                We can help you go from zero to MVP in 21 days
-            </h2>
+            <article className="grid">
+                {/* Heading */}
+                <h2 className={`${montserrat.className} text-6xl md:text-6xl text-center font-bold text-white`}>
+                    We can help you go from zero to MVP in 21 days
+                </h2>
+                <p className="text-dull text-center md:px-10">
+                    We build simple yet functional products for businesses or individuals. We hold your hand from design, development, attracting users and deployment. Ready to start ? Let's talk
+                </p>
+            </article>
         </article>
 
         {/* CTA */}
