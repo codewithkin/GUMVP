@@ -7,8 +7,8 @@ export default function Why () {
     return (
         <section className="bg-secondaryDark flex flex-col gap-4 text-white md:py-40 py-20 px-10 md:px-20">
             {/* Heading and CTA */}
-            <article className="flex justify-between items-center">
-                <h3 className={`${montserrat.className} text-xl md:text-2xl`}>Why choose GroundUpMvp for <br className="hidden md:block" /> your project ?</h3>
+            <article className="md:flex md:justify-between grid gap-2 items-center">
+                <h3 className={`${montserrat.className} text-2xl`}>Why choose GroundUpMvp for <br className="hidden md:block" /> your project ?</h3>
 
                 <article className="grid gap-1">
                     <p className="text-white md:text-lg">70% of software projects fail due to lack of focus - we're <br className="hidden md:block" />here to change that</p>
@@ -62,7 +62,7 @@ export default function Why () {
                 <article className="rounded-xl flex flex-col px-8 py-4 bg-primaryLight text-charcoal">
                     <h2 className={`${montserrat.className} capitalize text-xl font-semubold`}>Fast Delivery</h2>
                     <p>
-                        Planning, Deisning, Developing and Deploying your project in 21 days or less. We guarantee to have your project up and running in record time. 
+                        Planning, Designing, Developing and Deploying your project in 21 days or less. We guarantee to have your project up and running in record time. 
                         It no longer takes 2 years to build an awesome software, we can do it much faster, for much less
                     </p>
                 </article>

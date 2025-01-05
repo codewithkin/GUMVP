@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Pricing from "@/components/Pricing";
 import Process from "@/components/Process";
 import Why from "@/components/Why";
 import type { Metadata } from "next";
@@ -48,6 +49,7 @@ export default function Home () {
       <Header />
       <Process />
       <Why />
+      <Pricing />
     </section>
   )
 }
