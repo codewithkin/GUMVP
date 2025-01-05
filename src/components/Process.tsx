@@ -1,5 +1,7 @@
+"use client";
 import { Montserrat } from "next/font/google";
 import { steps, Step } from "@/data/steps";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Palette, PenTool, Ruler, Workflow } from "lucide-react";
 
@@ -18,7 +20,15 @@ export default function Process() {
                         const { title, description, imageUrl } = step;
                         if(step.title === "Design Phase") {
                             return (
-                                <article className="bg-charcoal border-3 border-primaryLight shadow-xl shadow-primaryLight p-8 rounded-xl gap-2 text-white">
+                                <motion.article 
+                                    key={step.id}
+                                    transition={{ delay: 0.5 }}
+                                    initial={{
+                                        y: 100,
+                                    }} 
+                                    animate={{
+                                        y: 0,
+                                    }} className="bg-charcoal border-3 border-primaryLight shadow-xl shadow-primaryLight p-8 rounded-xl gap-2 text-white">
                                     <h2 className="text-2xl font-semibold">{title}</h2>
                                     <p className="text-[#c4c4c4]">{description}</p>
 
@@ -34,11 +44,19 @@ export default function Process() {
                                         <Ruler size={20} />
                                         <Palette size={20} />
                                     </article>
-                                </article>
+                                </motion.article>
                             )
                         } else {
                             return (
-                                <article className="bg-white shadowe-xl border border-2 border-charcoal p-8 rounded-xl gap-2">
+                                <motion.article 
+                                key={step.id}
+                                initial={{
+                                    y: 100,
+                                }} 
+                                animate={{
+                                    y: 0,
+                                }}
+                                className="bg-white shadowe-xl border border-2 border-charcoal p-8 rounded-xl gap-2">
                                     <h2 className="text-2xl font-semibold text-charcoal">{title}</h2>
                                     <p className="text-charcoal">{description}</p>
 
@@ -47,7 +65,7 @@ export default function Process() {
                                         Learn more
                                         <ArrowRight size={16} />
                                     </Link>
-                                </article>
+                                </motion.article>
                             )
                         }
                     })
