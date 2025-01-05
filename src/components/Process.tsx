@@ -22,7 +22,6 @@ export default function Process() {
                             return (
                                 <motion.article 
                                     key={step.id}
-                                    transition={{ delay: 0.5 }}
                                     initial={{
                                         y: 100,
                                     }} 

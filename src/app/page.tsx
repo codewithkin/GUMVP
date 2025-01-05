@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Process from "@/components/Process";
+import Why from "@/components/Why";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -46,6 +47,7 @@ export default function Home () {
     <section>
       <Header />
       <Process />
+      <Why />
     </section>
   )
 }
