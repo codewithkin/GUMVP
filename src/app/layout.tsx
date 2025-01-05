@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import DesktopNavbar from "@/components/DesktopNavbar";
+import MobileNavbar from "@/components/MobileNavbar";
 
 const metadata: Metadata = {
   title: "GroundUpMVP | Build Your Idea in 21 Days",
@@ -55,6 +56,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <DesktopNavbar />
+        <MobileNavbar />
         {children}
       </body>
     </html>
