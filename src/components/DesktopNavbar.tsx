@@ -23,19 +23,19 @@ export default function DesktopNavbar() {
                 <Link href="/">Home</Link>
             </li>
             <li className="hover:text-secondaryDark transition-all duration-300">
-                <Link className="flex gap-2 items-center" href="/features">
+                <Link className="flex gap-2 items-center" href="#why">
                     <Workflow size={20} />
                     Features
                 </Link>
             </li>
             <li className="hover:text-secondaryDark transition-all duration-300">
-                <Link className="flex gap-2 items-center" href="/pricing">
+                <Link className="flex gap-2 items-center" href="#pricing">
                     <DollarSign size={20} />
                     Pricing
                 </Link>
             </li>
             <li className="hover:text-secondaryDark transition-all duration-300">
-                <Link className="flex gap-2 items-center" href="/how-it-works">
+                <Link className="flex gap-2 items-center" href="#process">
                     <PencilRuler size={20} />
                     How It Works
                 </Link>

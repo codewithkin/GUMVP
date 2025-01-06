@@ -46,8 +46,6 @@ export const metadata: Metadata = {
 };
 
 export default async function Home () {
-  // Simulate loading for 3seconds using promises
-  await new Promise(resolve => setTimeout(resolve, 3000));
 
   return (
     <section>

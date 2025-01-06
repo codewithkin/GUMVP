@@ -13,19 +13,19 @@ export default function MobileNavbarLinks() {
                     </Link>
                 </li>
                 <li>
-                    <Link className="flex gap-2 items-center" href="/features">
+                    <Link className="flex gap-2 items-center" href="#why">
                         <Workflow size={20} />
                         Features
                     </Link>
                 </li>
                 <li>
-                    <Link className="flex gap-2 items-center" href="/pricing">
+                    <Link className="flex gap-2 items-center" href="#pricing">
                         <DollarSign size={20} />
                         Pricing
                     </Link>
                 </li>
                 <li>
-                    <Link className="flex gap-2 items-center" href="/pricing">
+                    <Link className="flex gap-2 items-center" href="#process">
                         <PencilRuler size={20} />
                         How it work
                     </Link>

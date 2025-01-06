@@ -25,7 +25,7 @@ export default function PricingTier ({ title, price, features, imageUrl }: props
             {/* CTA */}
             <Link 
             className={`${title === "Standard" ? "bg-white text-primaryDark" : "text-white"} transition-all duration-300 hover:bg-primaryDark hover:text-white bg-secondaryDark text-secondaryDark rounded-full py-2 w-full flex justify-center items-center my-4`}
-            target="_blank" href="#">
+            target="_blank" href="https://calendly.com/admin-groundupmvp/project">
                 Let's talk
             </Link>
 
