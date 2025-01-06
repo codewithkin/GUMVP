@@ -31,7 +31,7 @@ export default function MobileNavbarLinks() {
                     </Link>
                 </li>
                 <li>
-                    <Link className="flex gap-2 items-center" href="emailto:admin@groundupmvp.com">
+                    <Link className="flex gap-2 items-center" href="mailto:admin@groundupmvp.com">
                         <MessageSquare size={20} />
                         Contact Us
                     </Link>

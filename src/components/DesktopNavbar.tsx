@@ -41,7 +41,7 @@ export default function DesktopNavbar() {
                 </Link>
             </li>
             <li className="pr-4 hover:text-secondaryDark transition-all duration-300">
-                <Link className="flex gap-2 items-center" href="emailto:admin@groundupmvp.com">
+                <Link className="flex gap-2 items-center" href="mailto:admin@groundupmvp.com">
                     <MessagesSquareIcon size={20} />
                     Contact Us
                 </Link>
