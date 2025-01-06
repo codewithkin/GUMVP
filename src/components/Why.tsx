@@ -5,7 +5,7 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["600"] });
 
 export default function Why () {
     return (
-        <section className="bg-secondaryDark flex flex-col gap-4 text-white md:py-40 py-20 px-10 md:px-20">
+        <section id="why" className="bg-secondaryDark flex flex-col gap-4 text-white md:py-40 py-20 px-10 md:px-20">
             {/* Heading and CTA */}
             <article className="md:flex md:justify-between grid gap-2 items-center">
                 <h3 className={`${montserrat.className} text-2xl`}>Why choose GroundUpMvp for <br className="hidden md:block" /> your project ?</h3>

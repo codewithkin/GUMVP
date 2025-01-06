@@ -3,8 +3,7 @@ import { props } from "@/components/ui/pricing-tier";
 export const tiers: Array<props> = [
     {
         title: 'Starter',
-        price: 499,
-        normalPrice: 899,
+        price: 899,
         features: [
             "Web or mobile app with core MVP features",
             "High quality design mockup",
@@ -17,8 +16,7 @@ export const tiers: Array<props> = [
     },
     {
         title: 'Standard',
-        price: 899,
-        normalPrice: 1200,
+        price: 2400,
         features: [
             "Everything in starter +",
             "Cloud hosting and complete deployment",
@@ -30,8 +28,7 @@ export const tiers: Array<props> = [
     },
     {
         title: 'Business',
-        price: 1600,
-        normalPrice: 2200,
+        price: 4000,
         features: [
             "Everything in Standard +",
             "Extermely detailed Analytics",

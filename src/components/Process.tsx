@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["600"] });
 
 export default function Process() {
     return (
-        <section className="flex flex-col justify-center items-center py-12 gap-4 px-10">
+        <section id="process" className="flex flex-col justify-center items-center py-12 gap-4 px-10">
             <h2 className={`${montserrat.className} text-2xl text-center`}>Our 3 step process to build your MVP</h2>
 
             {/* Steps flex container */}

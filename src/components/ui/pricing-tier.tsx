@@ -9,24 +9,22 @@ export type props = {
     title: string,
     price: number,
     features: Array<string>,
-    normalPrice: number,
     imageUrl?: string
 }
 
-export default function PricingTier ({ title, price, features, normalPrice, imageUrl }: props) {
+export default function PricingTier ({ title, price, features, imageUrl }: props) {
     return (
         <article className={`${montserrat.className} ${title === 'Standard' && 'bg-secondaryDark text-white'} border border-2 border-secondaryDark rounded-xl p-4`}>
             <h2 className={`text-2xl mb-4`}>{title}</h2>
 
             {/* Pricing */}
             <article className={`${roboto.className} grid`}>
-                <h3 className={`text-md text-dull line-through`}>${normalPrice}</h3>
                 <h2 className={`text-4xl`}>${price}</h2>
             </article>
 
             {/* CTA */}
             <Link 
-            className={`${title === "Standard" && "bg-white text-primaryDark"} transition-all duration-300 hover:bg-primaryDark hover:text-white bg-secondaryDark text-secondaryDark rounded-full py-2 w-full flex justify-center items-center my-4 text-white`}
+            className={`${title === "Standard" ? "bg-white text-primaryDark" : "text-white"} transition-all duration-300 hover:bg-primaryDark hover:text-white bg-secondaryDark text-secondaryDark rounded-full py-2 w-full flex justify-center items-center my-4`}
             target="_blank" href="#">
                 Let's talk
             </Link>

@@ -1,3 +1,4 @@
+import FAQ from "@/components/FAQ";
 import Header from "@/components/Header";
 import Pricing from "@/components/Pricing";
 import Process from "@/components/Process";
@@ -43,13 +44,17 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function Home () {
+export default async function Home () {
+  // Simulate loading for 3seconds using promises
+  await new Promise(resolve => setTimeout(resolve, 3000));
+
   return (
     <section>
       <Header />
       <Process />
       <Why />
       <Pricing />
+      <FAQ />
     </section>
   )
 }
