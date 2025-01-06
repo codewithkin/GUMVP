@@ -1,4 +1,5 @@
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Pricing from "@/components/Pricing";
 import Process from "@/components/Process";
@@ -55,6 +56,7 @@ export default async function Home () {
       <Why />
       <Pricing />
       <FAQ />
+      <Footer />
     </section>
   )
 }
